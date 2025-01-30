@@ -63,7 +63,7 @@ let bills = {
     bills.trash = Number(inputTrash.value) || 0;
   
     const inputJcard = document.querySelector(".js-input-jCard");
-    bills.jCard = Number(inputJcard.value) || 82;
+    bills.jCard = Number(inputJcard.value) || 116;
   
     const inputVcard = document.querySelector(".js-input-vCard");
     bills.vCard = Number(inputVcard.value) || 30;
