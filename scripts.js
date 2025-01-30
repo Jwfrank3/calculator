@@ -21,6 +21,7 @@ let bills = {
     lunch: 100, // every week
     groceries: 200, // every week
     affirm: 72,
+    ring: 5,
   };
   
   let accounts = {
@@ -85,7 +86,7 @@ let bills = {
       bills.trash;
     let parts = total / 4;
   
-    const firstHalf = parts * 2 + bills.cricket + bills.adobe;
+    const firstHalf = parts * 2 + bills.cricket + bills.adobe + bills.ring;
     document.querySelector(
       ".js-paragraph-bills"
     ).innerText = `Total Bills = $${total}`;
