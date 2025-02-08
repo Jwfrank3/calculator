@@ -25,7 +25,7 @@ let bills = {
   };
   
   let accounts = {
-    vickiCheck: 960, // 18th & 1st
+    vickiCheck: 1070, // 18th & 1st
     myCheck1: 450, // the sucky slow check 10th & 24th
     myCheck2: 550, // speedy check where i can buy groceries early 18th & 31st
     myCheck3: 450, // duplicate of myCheck1
