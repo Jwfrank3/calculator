@@ -3,8 +3,8 @@ let bills = {
     chickasaw: 135, // due on the 1st
     comcast: 135, // due on the 6th
     hardeman: 0, // due on 10th
-    jCard: 70, // due on 11th
-    vCard: 30, // due on 15th
+    jCard: 123, // due on 11th
+    vCard: 41, // due on 15th
     gamePass: 22, // due on the 16th
     cricket: 135, //due on 17th
     crunchyRoll: 9, // due on the 17th
@@ -20,8 +20,9 @@ let bills = {
     gas: 100, // every week for cars
     lunch: 100, // every week
     groceries: 200, // every week
-    affirm: 72,
+    affirm: 176,
     ring: 5,
+    careCredit: 30
   };
   
   let accounts = {
@@ -117,7 +118,8 @@ let bills = {
       bills.lifeInsurance +
       bills.gamePass +
       bills.wetfood +
-      bills.affirm;
+      bills.affirm +
+      bills.careCredit;
   
     const miniBudget =
       accounts.myCheck2 - foodGas - bills.catLitter - bills.wetfood;
