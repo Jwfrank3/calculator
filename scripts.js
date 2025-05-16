@@ -2,7 +2,7 @@ let bills = {
     mortgage: 900, // due on the 1st
     chickasaw: 135, // due on the 1st
     comcast: 135, // due on the 6th
-    hardeman: 0, // due on 10th
+    hardeman: 43, // due on 10th
     jCard: 123, // due on 11th
     vCard: 41, // due on 15th
     gamePass: 22, // due on the 16th
