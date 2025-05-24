@@ -10,7 +10,7 @@ let bills = {
     crunchyRoll: 9, // due on the 17th
     carNote: 262, // due on the 18th
     spotify: 14, // due on the 23rd
-    adobe: 22, // due on the 23rd
+    adobe: 40, // due on the 23rd
     carInsurance: 211, // due on the 25th
     lifeInsurance: 35, // due on the 25th
     wetfood: 30, // due every week
