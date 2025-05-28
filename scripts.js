@@ -1,5 +1,5 @@
 let bills = {
-    mortgage: 900, // due on the 1st
+    mortgage: 958, // due on the 1st
     chickasaw: 135, // due on the 1st
     comcast: 135, // due on the 6th
     hardeman: 43, // due on 10th
