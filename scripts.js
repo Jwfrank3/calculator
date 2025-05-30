@@ -16,7 +16,6 @@ let bills = {
     wetfood: 30, // due every week
     catLitter: 26, //every two weeks, fresh step 38 pounds
     trash: 0, // every three months starting in january at $99
-    lawn: 0, // due every other week starting on the next years cut
     gas: 100, // every week for cars
     lunch: 100, // every week
     groceries: 200, // every week
@@ -57,8 +56,8 @@ let bills = {
     const inputHardeman = document.querySelector(".js-input-hardeman");
     bills.hardeman = Number(inputHardeman.value) || 36;
   
-    const inputLawn = document.querySelector(".js-input-lawn");
-    bills.lawn = Number(inputLawn.value) || 0;
+    const inputCareCredit = document.querySelector(".care-credit");
+    bills.careCredit = Number(inputcareCredit.value) || 30;
   
     const inputTrash = document.querySelector(".js-input-trash");
     bills.trash = Number(inputTrash.value) || 0;
@@ -83,7 +82,6 @@ let bills = {
       bills.chickasaw +
       bills.comcast +
       bills.hardeman +
-      bills.lawn +
       bills.trash;
     let parts = total / 4;
   
