@@ -67,7 +67,7 @@ function totalBills2() {
   updateValue();
 
   const secondHalf = bills.jCard + bills.vCard + bills.carNote + bills.carInsurance + bills.lifeInsurance +
-    bills.gamePass + bills.wetfood + bills.affirm + bills.careCredit;
+    bills.gamePass + bills.wetfood + bills.affirm + bills.careCredit + bills.spotify;
 
   const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas;
   const miniBudget = accounts.myCheck2 - foodGas - bills.catLitter - bills.wetfood;
