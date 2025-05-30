@@ -11,8 +11,8 @@ let bills = {
     carNote: 262, // due on the 18th
     spotify: 14, // due on the 23rd
     adobe: 40, // due on the 23rd
-    carInsurance: 211, // due on the 25th
-    lifeInsurance: 35, // due on the 25th
+    carInsurance: 214, // due on the 25th
+    lifeInsurance: 36, // due on the 25th
     wetfood: 30, // due every week
     catLitter: 26, //every two weeks, fresh step 38 pounds
     trash: 0, // every three months starting in january at $99
