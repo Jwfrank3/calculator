@@ -15,7 +15,6 @@ let bills = {
   lifeInsurance: 36,
   wetfood: 30,
   catLitter: 26,
-  trash: 0,
   gas: 100,
   lunch: 100,
   groceries: 200,
