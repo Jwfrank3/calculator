@@ -50,7 +50,7 @@ function updateValue() {
 function totalBills1() {
   updateValue();
 
-  const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + bills.trash;
+  const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman;
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.adobe + bills.ring;
