@@ -57,7 +57,7 @@ let bills = {
     bills.hardeman = Number(inputHardeman.value) || 36;
   
     const inputCareCredit = document.querySelector(".care-credit");
-    bills.careCredit = Number(inputcareCredit.value) || 30;
+    bills.careCredit = Number(inputCareCredit.value) || 30;
   
     const inputTrash = document.querySelector(".js-input-trash");
     bills.trash = Number(inputTrash.value) || 0;
