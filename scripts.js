@@ -43,7 +43,6 @@ function updateValue() {
   bills.chickasaw = Number(document.querySelector(".js-input-chickasaw").value) || 135;
   bills.hardeman = Number(document.querySelector(".js-input-hardeman").value) || 43;
   bills.careCredit = Number(document.querySelector(".care-credit").value) || 30;
-  bills.trash = Number(document.querySelector(".js-input-trash").value) || 0;
   bills.jCard = Number(document.querySelector(".js-input-jCard").value) || 123;
   bills.vCard = Number(document.querySelector(".js-input-vCard").value) || 41;
 }
