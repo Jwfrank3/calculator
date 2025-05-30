@@ -68,13 +68,6 @@ let bills = {
     const inputVcard = document.querySelector(".js-input-vCard");
     bills.vCard = Number(inputVcard.value) || 30;
   
-    const inputCarInsurance = document.querySelector(".js-input-carInsurance");
-    bills.carInsurance = Number(inputCarInsurance.value) || 211;
-  
-    const inputLifeInsurance = document.querySelector(".js-input-lifeInsurance");
-    bills.lifeInsurance = Number(inputLifeInsurance.value) || 36;
-  }
-  
   function totalBills1() {
     updateValue();
     let total =
