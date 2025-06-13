@@ -9,18 +9,18 @@ let bills = {
   cricket: 135,
   crunchyRoll: 9,
   carNote: 262,
-  spotify: 14,
+  spotify: 0,
   adobe: 40,
   carInsurance: 214,
   lifeInsurance: 36,
   wetfood: 30,
   catLitter: 26,
-  gas: 100,
-  lunch: 100,
-  groceries: 200,
+  gas: 200,
+  lunch: 200,
+  groceries: 400,
   affirm: 176,
   ring: 5,
-  careCredit: 30
+  careCredit: 30,
 };
 
 let accounts = {
