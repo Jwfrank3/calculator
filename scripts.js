@@ -50,7 +50,12 @@ function updateValue() {
 function totalBills1() {
   updateValue();
 
-  const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman;
+  // Get the checkbox
+  const trashCheckbox = document.querySelector('input[name="trash"]');
+  const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
+
+  // Add trashCost to total
+  const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.adobe + bills.ring;
