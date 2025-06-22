@@ -74,7 +74,6 @@ function totalBills2() {
     bills.gamePass + bills.wetfood + bills.affirm + bills.careCredit + bills.spotify;
 
   const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas;
-  const miniBudget = accounts.myCheck2 - foodGas - bills.catLitter - bills.wetfood;
 
   document.querySelector(".second-half").innerText = `Second Half is $${secondHalf}`;
   document.querySelector(".js-paragraph-second-budget").innerText = `Second Budget is $${secondBudget}`;
