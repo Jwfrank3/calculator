@@ -9,7 +9,7 @@ let bills = {
   cricket: 135,
   crunchyRoll: 9,
   carNote: 262,
-  spotify: 0,
+  spotify: 13.13,
   adobe: 40,
   carInsurance: 214,
   lifeInsurance: 36,
