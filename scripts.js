@@ -35,7 +35,6 @@ const foodGas = bills.groceries + bills.lunch + bills.gas;
 
 function updateValue() {
   accounts.myCheck1 = Number(document.querySelector(".js-input-myCheck1").value) || 450;
-  accounts.myCheck2 = Number(document.querySelector(".js-input-myCheck2").value) || 550;
   accounts.myCheck3 = Number(document.querySelector(".js-input-myCheck3").value) || 450;
   accounts.vickiCheck = Number(document.querySelector(".js-input-vickiCheck").value) || 1130;
   accounts.vickiCheck2 = Number(document.querySelector(".js-input-vickiCheck2").value) || 1130;
