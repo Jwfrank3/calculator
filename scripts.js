@@ -78,5 +78,4 @@ function totalBills2() {
 
   document.querySelector(".second-half").innerText = `Second Half is $${secondHalf}`;
   document.querySelector(".js-paragraph-second-budget").innerText = `Second Budget is $${secondBudget}`;
-  document.querySelector(".js-paragraph-mini-budget").innerText = `Mini Budget is $${miniBudget}`;
 }
