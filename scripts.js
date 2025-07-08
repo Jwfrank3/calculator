@@ -20,6 +20,7 @@ let bills = {
   affirm: 176,
   ring: 5,
   careCredit: 30,
+  studentLoans: 64, // due on the 11th
 };
 
 let accounts = {
@@ -71,7 +72,7 @@ function totalBills2() {
   const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance +
     bills.gamePass + bills.wetfood + bills.affirm + bills.careCredit + bills.spotify;
 
-  const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas;
+  const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas - bills.studentLoans;
 
   document.querySelector(".second-half").innerText = `Second Half is $${secondHalf}`;
   document.querySelector(".js-paragraph-second-budget").innerText = `Second Budget is $${secondBudget}`;
