@@ -8,7 +8,7 @@ let bills = {
   gamePass: 22,
   cricket: 135,
   crunchyRoll: 9,
-  spotify: 13.13,
+  spotify: 14,
   adobe: 40,
   carInsurance: 214,
   lifeInsurance: 36,
