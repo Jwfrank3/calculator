@@ -8,7 +8,6 @@ let bills = {
   gamePass: 22,
   cricket: 135,
   crunchyRoll: 9,
-  carNote: 262,
   spotify: 13.13,
   adobe: 40,
   carInsurance: 214,
@@ -69,7 +68,7 @@ function totalBills1() {
 function totalBills2() {
   updateValue();
 
-  const secondHalf = bills.jCard + bills.vCard + bills.carNote + bills.carInsurance + bills.lifeInsurance +
+  const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance +
     bills.gamePass + bills.wetfood + bills.affirm + bills.careCredit + bills.spotify;
 
   const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas;
