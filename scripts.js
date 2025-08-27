@@ -10,7 +10,7 @@ let bills = {
   crunchyRoll: 9,
   spotify: 14,
   adobe: 40,
-  carInsurance: 88,
+  carInsurance: 151,
   lifeInsurance: 36,
   wetfood: 30,
   catLitter: 26,
