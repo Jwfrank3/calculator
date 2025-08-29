@@ -19,7 +19,7 @@ let bills = {
   groceries: 200,
   affirm: 176,
   ring: 5,
-  careCredit: 30,
+  careCredit: 41,
   studentLoans: 64, // due on the 11th
 };
 
