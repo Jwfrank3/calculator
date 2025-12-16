@@ -20,7 +20,7 @@ let bills = {
   affirm: 176,
   ring: 5,
   careCredit: 41,
-  studentLoans: 64, // due on the 11th
+  studentLoans: 400, // due on the 11th
 };
 
 let accounts = {
