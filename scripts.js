@@ -59,7 +59,7 @@ function totalBills1() {
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.adobe + bills.ring;
-  const firstBudget = accounts.myCheck1 - bills.meryllLynch + accounts.vickiCheck - foodGas - firstHalf;
+  const firstBudget = accounts.myCheck1 - bills.MeryllLynch + accounts.vickiCheck - foodGas - firstHalf;
 
   document.querySelector(".js-paragraph-bills").innerText = `Total Bills = $${total}`;
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
