@@ -73,7 +73,7 @@ function totalBills2() {
   const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance +
     bills.gamePass + bills.wetfood + bills.affirm + bills.careCredit + bills.spotify + bills.studentLoans;
 
-  const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas - bills.studentLoans;
+  const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas;
 
   document.querySelector(".second-half").innerText = `Second Half is $${secondHalf}`;
   document.querySelector(".js-paragraph-second-budget").innerText = `Second Budget is $${secondBudget}`;
