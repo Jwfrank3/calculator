@@ -10,8 +10,8 @@ let bills = {
   spotify: 14,
   carInsurance: 151,
   lifeInsurance: 36,
-  gas: 150,
-  lunch: 150,
+  vAllowance: 100,
+  jAllowance: 150,
   groceries: 200,
   affirm: 176,
   ring: 5,
@@ -27,7 +27,7 @@ let accounts = {
   vickiCheck2: 990
 };
 
-const foodGas = bills.groceries + bills.lunch + bills.gas;
+const foodAllowance = bills.groceries + bills.lunch + bills.vAllowance;
 
 function updateValue() {
   accounts.myCheck1 = Number(document.querySelector(".js-input-myCheck1").value) || 462;
@@ -54,7 +54,7 @@ function totalBills1() {
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.ring;
-  const firstBudget = accounts.myCheck1 + accounts.vickiCheck - foodGas - firstHalf;
+  const firstBudget = accounts.myCheck1 + accounts.vickiCheck - foodAllowance - firstHalf;
 
   document.querySelector(".js-paragraph-bills").innerText = `Total Bills = $${total}`;
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
@@ -67,7 +67,7 @@ function totalBills2() {
 
   const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance + bills.affirm + bills.careCredit + bills.spotify + bills.studentLoans;
 
-  const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas;
+  const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodAllowance;
 
   document.querySelector(".second-half").innerText = `Second Half is $${secondHalf}`;
   document.querySelector(".js-paragraph-second-budget").innerText = `Second Budget is $${secondBudget}`;
