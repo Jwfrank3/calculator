@@ -5,15 +5,11 @@ let bills = {
   hardeman: 43,
   jCard: 123,
   vCard: 41,
-  gamePass: 22,
   cricket: 135,
   crunchyRoll: 9,
   spotify: 14,
-  adobe: 40,
   carInsurance: 151,
   lifeInsurance: 36,
-  wetfood: 30,
-  catLitter: 26,
   gas: 150,
   lunch: 150,
   groceries: 200,
@@ -58,7 +54,7 @@ function totalBills1() {
   const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
   const parts = total / 4;
 
-  const firstHalf = parts * 2 + bills.cricket + bills.adobe + bills.ring;
+  const firstHalf = parts * 2 + bills.cricket + bills.ring;
   const firstBudget = accounts.myCheck1 - bills.MeryllLynch + accounts.vickiCheck - foodGas - firstHalf;
 
   document.querySelector(".js-paragraph-bills").innerText = `Total Bills = $${total}`;
@@ -70,8 +66,7 @@ function totalBills1() {
 function totalBills2() {
   updateValue();
 
-  const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance +
-    bills.gamePass + bills.affirm + bills.careCredit + bills.spotify + bills.studentLoans;
+  const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance + bills.affirm + bills.careCredit + bills.spotify + bills.studentLoans;
 
   const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodGas;
 
