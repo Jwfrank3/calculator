@@ -35,10 +35,10 @@ let accounts = {
 const foodGas = bills.groceries + bills.lunch + bills.gas;
 
 function updateValue() {
-  accounts.myCheck1 = Number(document.querySelector(".js-input-myCheck1").value) || 450;
-  accounts.myCheck3 = Number(document.querySelector(".js-input-myCheck3").value) || 450;
-  accounts.vickiCheck = Number(document.querySelector(".js-input-vickiCheck").value) || 1130;
-  accounts.vickiCheck2 = Number(document.querySelector(".js-input-vickiCheck2").value) || 1130;
+  accounts.myCheck1 = Number(document.querySelector(".js-input-myCheck1").value) || 462;
+  accounts.myCheck3 = Number(document.querySelector(".js-input-myCheck3").value) || 462;
+  accounts.vickiCheck = Number(document.querySelector(".js-input-vickiCheck").value) || 990;
+  accounts.vickiCheck2 = Number(document.querySelector(".js-input-vickiCheck2").value) || 990;
 
   bills.chickasaw = Number(document.querySelector(".js-input-chickasaw").value) || 135;
   bills.hardeman = Number(document.querySelector(".js-input-hardeman").value) || 43;
