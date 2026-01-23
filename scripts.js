@@ -27,7 +27,7 @@ let accounts = {
   vickiCheck2: 990
 };
 
-const foodAllowance = bills.groceries + bills.lunch + bills.vAllowance;
+const foodAllowance = bills.groceries + bills.jAllowance + bills.vAllowance;
 
 function updateValue() {
   accounts.myCheck1 = Number(document.querySelector(".js-input-myCheck1").value) || 462;
