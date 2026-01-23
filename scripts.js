@@ -25,11 +25,11 @@ let bills = {
 };
 
 let accounts = {
-  vickiCheck: 1130,
-  myCheck1: 450,
-  myCheck2: 550,
-  myCheck3: 450,
-  vickiCheck2: 1130
+  vickiCheck: 990,
+  myCheck1: 462,
+  myCheck2: 568,
+  myCheck3: 462,
+  vickiCheck2: 990
 };
 
 const foodGas = bills.groceries + bills.lunch + bills.gas;
