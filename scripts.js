@@ -17,7 +17,6 @@ let bills = {
   ring: 5,
   careCredit: 41,
   studentLoans: 400, // due on the 11th
-  MeryllLynch: 43,
 };
 
 let accounts = {
@@ -55,7 +54,7 @@ function totalBills1() {
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.ring;
-  const firstBudget = accounts.myCheck1 - bills.MeryllLynch + accounts.vickiCheck - foodGas - firstHalf;
+  const firstBudget = accounts.myCheck1 + accounts.vickiCheck - foodGas - firstHalf;
 
   document.querySelector(".js-paragraph-bills").innerText = `Total Bills = $${total}`;
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
