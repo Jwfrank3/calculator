@@ -1,5 +1,5 @@
 let bills = {
-  mortgage: 988,
+  mortgage: 958,
   chickasaw: 135,
   comcast: 135,
   hardeman: 43,
@@ -53,7 +53,7 @@ function totalBills1() {
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.ring;
-  const firstBudget = accounts.myCheck1 + accounts.vickiCheck - foodAllowance - firstHalf;
+  const firstBudget = accounts.myCheck1 + accounts.vickiCheck - foodAllowance - firstHalf - 30;
 
   document.querySelector(".js-paragraph-bills").innerText = `Total Bills = $${total}`;
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
