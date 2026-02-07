@@ -8,12 +8,11 @@ let bills = {
   cricket: 135,
   crunchyRoll: 9,
   spotify: 14,
-  carInsurance: 151,
+  carInsurance: 115,
   lifeInsurance: 36,
   vAllowance: 100,
   jAllowance: 150,
   groceries: 200,
-  affirm: 176,
   ring: 5,
   careCredit: 41,
   studentLoans: 400, // due on the 11th
@@ -65,7 +64,7 @@ function totalBills1() {
 function totalBills2() {
   updateValue();
 
-  const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance + bills.affirm + bills.careCredit + bills.spotify + bills.studentLoans;
+  const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance + bills.careCredit + bills.spotify + bills.studentLoans;
 
   const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodAllowance;
 
