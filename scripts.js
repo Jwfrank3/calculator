@@ -52,10 +52,10 @@ function totalBills1() {
   const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
   const parts = total / 4;
 
-  const firstHalf = parts * 2 + bills.cricket + bills.ring;
+  const firstHalf = parts * 2 + bills.cricket + bills.ring + 30;
   const firstBudget = accounts.myCheck1 + accounts.vickiCheck - foodAllowance - firstHalf;
 
-  document.querySelector(".js-paragraph-bills").innerText = `Total Bills = $${total}`;
+  document.querySelector(".js-paragraph-bills").innerText = `Total Bills = $${total + 30}`;
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
   document.querySelector(".js-paragraph-first").innerText = `My part = $${firstHalf}`;
   document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
