@@ -7,7 +7,6 @@ let bills = {
   vCard: 41,
   cricket: 135,
   crunchyRoll: 9,
-  spotify: 14,
   carInsurance: 115,
   lifeInsurance: 36,
   vAllowance: 100,
@@ -64,7 +63,7 @@ function totalBills1() {
 function totalBills2() {
   updateValue();
 
-  const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance + bills.careCredit + bills.spotify + bills.studentLoans;
+  const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance + bills.careCredit + bills.studentLoans;
 
   const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodAllowance;
 
