@@ -7,7 +7,7 @@ let bills = {
   vCard: 41,
   cricket: 135,
   crunchyRoll: 9,
-  carInsurance: 115,
+  carInsurance: 120,
   lifeInsurance: 36,
   vAllowance: 100,
   jAllowance: 150,
