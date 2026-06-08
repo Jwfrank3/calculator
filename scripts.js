@@ -48,7 +48,7 @@ function totalBills1() {
   const trashCheckbox = document.querySelector('input[name="trash"]');
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
 
-  let place holder = 
+  let placeholder = 
     if (Number(document.querySelector(".js-input-hardeman").value) >= 50) {
     bills.hardeman == ((Number(document.querySelector(".js-input-hardeman").value) * 1000) * 28) / 1000 + 3;
   } else {
