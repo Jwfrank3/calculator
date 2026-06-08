@@ -1,5 +1,5 @@
 let bills = {
-  mortgage: 958,
+  mortgage: 1024,
   chickasaw: 135,
   comcast: 135,
   hardeman: 43,
