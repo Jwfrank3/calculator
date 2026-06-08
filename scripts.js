@@ -59,7 +59,7 @@ function totalBills1() {
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
   document.querySelector(".js-paragraph-first").innerText = `My part = $${firstHalf}`;
   document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
-  document.querySelector(".hardemanPlaceholder").innerText = `$${bills.hardeman}`;
+  document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${bills.hardeman}`;
 }
 
 function totalBills2() {
