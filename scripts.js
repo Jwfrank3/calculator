@@ -49,12 +49,13 @@ function totalBills1() {
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
 
   let placeholder = 
-    if (Number(document.querySelector(".js-input-hardeman").value) >= 50) {
-    bills.hardeman == ((Number(document.querySelector(".js-input-hardeman").value) * 1000) * 28) / 1000 + 3;
+    if (hardemanInput >= 50) {
+    placeholder = ((hardemanInput * 1000) * 28) / 1000 + 3;
   } else {
-    bills.hardeman == Number(document.querySelector(".js-input-hardeman").value) + 3;
-  };
-  document.querySelector(".hardemanPlaceholder").innerText = `hardeman logic = $${placeholder}`;
+    placeholder = hardemanInput + 3;
+  }
+  document.querySelector(".hardemanPlaceholder").innerText =
+    `Hardeman total = $${placeholder.toFixed(2)}`;
   
   // Add trashCost to total
   const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
