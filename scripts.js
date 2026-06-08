@@ -35,7 +35,7 @@ function updateValue() {
 
   bills.chickasaw = Number(document.querySelector(".js-input-chickasaw").value) || 135;
   bills.hardeman = Number(document.querySelector(".js-input-hardeman").value) || 43;
-  
+
   bills.careCredit = Number(document.querySelector(".care-credit").value) || 30;
   bills.jCard = Number(document.querySelector(".js-input-jCard").value) || 123;
   bills.vCard = Number(document.querySelector(".js-input-vCard").value) || 41;
@@ -44,54 +44,39 @@ function updateValue() {
 function totalBills1() {
   updateValue();
 
+  // Get the checkbox
   const trashCheckbox = document.querySelector('input[name="trash"]');
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
 
-  // Get Hardeman input value
-  const hardemanInput = bills.hardeman;
-
-  let hardemanTotal;
-
-  if (hardemanInput >= 50) {
-    hardemanTotal = ((hardemanInput * 1000) * 28) / 1000 + 3;
+  //let placeholder =
+    if (hardemanInput >= 50) {
+    placeholder = ((hardemanInput * 1000) * 28) / 1000 + 3;
   } else {
-    hardemanTotal = hardemanInput + 3;
+    placeholder = hardemanInput + 3;
   }
+  //document.querySelector(".hardemanPlaceholder").innerText =
+    `Hardeman total = $${placeholder.toFixed(2)}`;
 
-  document.querySelector(".hardemanPlaceholder").innerText =
-    `Hardeman total = $${hardemanTotal.toFixed(2)}`;
-
-  // Use hardemanTotal instead of bills.hardeman
-  const total =
-    bills.mortgage +
-    bills.chickasaw +
-    bills.comcast +
-    hardemanTotal +
-    trashCost;
-
+  // Add trashCost to total
+  const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
   const parts = total / 4;
 
-  const firstHalf =
-    parts * 2 +
-    bills.cricket +
-    bills.ring +
-    30;
+  const firstHalf = parts * 2 + bills.cricket + bills.ring + 30;
+  const firstBudget = accounts.myCheck1 + accounts.vickiCheck - foodAllowance - firstHalf;
 
-  const firstBudget =
-    accounts.myCheck1 +
-    accounts.vickiCheck -
-    foodAllowance -
-    firstHalf;
+  document.querySelector(".js-paragraph-bills").innerText = `Total Bills = $${total + 30}`;
+  document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
+  document.querySelector(".js-paragraph-first").innerText = `My part = $${firstHalf}`;
+  document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
+}
 
-  document.querySelector(".js-paragraph-bills").innerText =
-    `Total Bills = $${total.toFixed(2)}`;
+function totalBills2() {
+  updateValue();
 
-  document.querySelector(".js-paragraph-parts").innerText =
-    `Ned's and Kim's part = $${parts.toFixed(2)}`;
+  const secondHalf = bills.jCard + bills.vCard + bills.carInsurance + bills.lifeInsurance + bills.careCredit + bills.studentLoans;
 
-  document.querySelector(".js-paragraph-first").innerText =
-    `My part = $${firstHalf.toFixed(2)}`;
+  const secondBudget = accounts.myCheck3 + accounts.vickiCheck2 - secondHalf - foodAllowance;
 
-  document.querySelector(".js-paragraph-first-budget").innerText =
-    `Remaining Budget $${firstBudget.toFixed(2)}`;
+  document.querySelector(".second-half").innerText = `Second Half is $${secondHalf}`;
+  document.querySelector(".js-paragraph-second-budget").innerText = `Second Budget is $${secondBudget}`;
 }
