@@ -35,12 +35,6 @@ function updateValue() {
 
   bills.chickasaw = Number(document.querySelector(".js-input-chickasaw").value) || 135;
   bills.hardeman = Number(document.querySelector(".js-input-hardeman").value) || 43;
-    
-  if (Number(document.querySelector(".js-input-hardeman").value) >= 50) {
-    bills.hardeman == ((Number(document.querySelector(".js-input-hardeman").value) * 1000) * 28) / 1000 + 3;
-  } else {
-    bills.hardeman == Number(document.querySelector(".js-input-hardeman").value) + 3;
-  };
   
   bills.careCredit = Number(document.querySelector(".care-credit").value) || 30;
   bills.jCard = Number(document.querySelector(".js-input-jCard").value) || 123;
@@ -53,8 +47,14 @@ function totalBills1() {
   // Get the checkbox
   const trashCheckbox = document.querySelector('input[name="trash"]');
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
-    
-  //document.querySelector(".hardemanPlaceholder").innerText = `hardeman logic = $${bills.hardeman}`;
+
+  let place holder = 
+    if (Number(document.querySelector(".js-input-hardeman").value) >= 50) {
+    bills.hardeman == ((Number(document.querySelector(".js-input-hardeman").value) * 1000) * 28) / 1000 + 3;
+  } else {
+    bills.hardeman == Number(document.querySelector(".js-input-hardeman").value) + 3;
+  };
+  document.querySelector(".hardemanPlaceholder").innerText = `hardeman logic = $${placeholder}`;
   
   // Add trashCost to total
   const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
