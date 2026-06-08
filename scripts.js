@@ -48,14 +48,6 @@ function totalBills1() {
   const trashCheckbox = document.querySelector('input[name="trash"]');
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
 
-  //let placeholder =
-    //if (hardemanInput >= 50) {
-    placeholder = ((hardemanInput * 1000) * 28) / 1000 + 3;
-  } else {
-    placeholder = hardemanInput + 3;
-  }
-  //document.querySelector(".hardemanPlaceholder").innerText = `Hardeman total = $${placeholder.toFixed(2)}`;
-
   // Add trashCost to total
   const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
   const parts = total / 4;
