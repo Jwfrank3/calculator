@@ -17,6 +17,8 @@ let bills = {
   studentLoans: 402, // due on the 11th
 };
 
+let placeholder = bills.hardeman
+
 let accounts = {
   vickiCheck: 990,
   myCheck1: 462,
@@ -59,6 +61,7 @@ function totalBills1() {
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
   document.querySelector(".js-paragraph-first").innerText = `My part = $${firstHalf}`;
   document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
+  document.querySelector(".hardemanPlaceholder").innerText = `$${placeholder}`
 }
 
 function totalBills2() {
