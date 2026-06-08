@@ -54,7 +54,7 @@ function totalBills1() {
   const trashCheckbox = document.querySelector('input[name="trash"]');
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
     
-  document.querySelector(".hardemanPlaceholder").innerText = `hardeman logic = $${bills.hardeman}`;
+  //document.querySelector(".hardemanPlaceholder").innerText = `hardeman logic = $${bills.hardeman}`;
   
   // Add trashCost to total
   const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
