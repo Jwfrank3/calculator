@@ -35,6 +35,13 @@ function updateValue() {
 
   bills.chickasaw = Number(document.querySelector(".js-input-chickasaw").value) || 135;
   bills.hardeman = Number(document.querySelector(".js-input-hardeman").value) || 43;
+  
+  if (Number(document.querySelector(".js-input-hardeman").value) >= 50) {
+    bills.hardeman == ((Number(document.querySelector(".js-input-hardeman").value) * 100) * 28) / 100 + 3;
+  } else {
+    bills.hardeman == Number(document.querySelector(".js-input-hardeman").value) + 3;
+  };
+  
   bills.careCredit = Number(document.querySelector(".care-credit").value) || 30;
   bills.jCard = Number(document.querySelector(".js-input-jCard").value) || 123;
   bills.vCard = Number(document.querySelector(".js-input-vCard").value) || 41;
