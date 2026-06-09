@@ -25,6 +25,25 @@ let accounts = {
   vickiCheck2: 990
 };
 
+function getHardemanTotal() {
+  const input = document.querySelector(".js-input-hardeman").value;
+  const raw = Number(input) || bills.hardeman;
+
+  const cents = Math.round(raw * 100);
+
+  let totalCents = cents;
+
+  if (cents >= 5000) {
+    totalCents = Math.round(totalCents * 1.028);
+  }
+
+  totalCents += 250;
+
+  totalCents = Math.ceil(totalCents / 100) * 100;
+
+  return totalCents / 100;
+}
+
 const foodAllowance = bills.groceries + bills.jAllowance + bills.vAllowance;
 
 function updateValue() {
@@ -49,7 +68,7 @@ function totalBills1() {
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
 
   // Add trashCost to total
-  const total = bills.mortgage + bills.chickasaw + bills.comcast + bills.hardeman + trashCost;
+  const total = bills.mortgage + bills.chickasaw + bills.comcast + getHardemanTotal() + trashCost;
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.ring + 30;
