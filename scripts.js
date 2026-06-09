@@ -60,21 +60,19 @@ function totalBills1() {
   document.querySelector(".js-paragraph-first").innerText = `My part = $${firstHalf}`;
   document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
   
-  const cents = Math.round(bills.hardeman * 100);
+  const cents = Math.round(Number(bills.hardeman) * 100);
 
-  let totalCents;
+let totalCents = cents;
 
-// apply percentage first if needed
-  if (cents > 5000) {
-  totalCents = Math.round(cents * 1.028);
-  } else {
-  totalCents = cents;
-  }
+// apply percentage FIRST (only if over $50)
+if (cents > 5000) {
+  totalCents = Math.round(totalCents * 1.028);
+}
 
-// ALWAYS add flat fee AFTER percentage logic
-  totalCents += 250;
+// ALWAYS add fee last
+totalCents += 250;
 
-  document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
+document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
 }
 
 function totalBills2() {
