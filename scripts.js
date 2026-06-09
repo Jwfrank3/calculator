@@ -62,7 +62,10 @@ function totalBills1() {
   
   const cents = Math.round(bills.hardeman * 100);
 
-  const totalCents = Math.round(cents * 1028 / 1000) + 250;
+  const totalCents =
+  cents > 5000
+    ? Math.round(cents * 1028 / 1000) + 250
+    : cents + 250;
 
   document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
 }
