@@ -61,7 +61,7 @@ function totalBills1() {
   document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
   
   const cents = Math.round(bills.hardeman * 100);
-  const totalCents = (cents * 1028) + 25) / 1000;
+  const totalCents = (cents * 1028 + 25) / 1000;
 
   document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
 }
