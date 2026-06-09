@@ -9,7 +9,7 @@ let bills = {
   crunchyRoll: 9,
   carInsurance: 120,
   lifeInsurance: 36,
-  vAllowance: 100,
+  vAllowance: 150,
   jAllowance: 150,
   groceries: 200,
   ring: 5,
