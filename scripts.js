@@ -64,12 +64,12 @@ function totalBills1() {
 
 let totalCents = cents;
 
-// apply percentage FIRST (only if over $50)
+// apply percentage FIRST (no premature rounding issues)
 if (cents > 5000) {
   totalCents = Math.round(totalCents * 1.028);
 }
 
-// ALWAYS add fee last
+// ONLY after all math is done, add flat fee
 totalCents += 250;
 
 document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
