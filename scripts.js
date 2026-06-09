@@ -59,20 +59,20 @@ function totalBills1() {
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
   document.querySelector(".js-paragraph-first").innerText = `My part = $${firstHalf}`;
   document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
-  
   const cents = Math.round(Number(bills.hardeman) * 100);
 
-let totalCents = cents;
+  let totalCents = cents;
 
-// apply percentage FIRST (no premature rounding issues)
-if (cents >= 5000) {
+  if (cents >= 5000) {
   totalCents = Math.round(totalCents * 1.028);
-}
+  }
 
-// ONLY after all math is done, add flat fee
-totalCents += 250;
+  totalCents += 250;
 
-document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
+  // ROUND UP to nearest dollar
+  totalCents = Math.ceil(totalCents / 100) * 100;
+
+  document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
 }
 
 function totalBills2() {
