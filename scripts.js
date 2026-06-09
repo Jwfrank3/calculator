@@ -65,7 +65,7 @@ function totalBills1() {
 let totalCents = cents;
 
 // apply percentage FIRST (no premature rounding issues)
-if (cents > 5000) {
+if (cents >= 5000) {
   totalCents = Math.round(totalCents * 1.028);
 }
 
