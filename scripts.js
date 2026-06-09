@@ -14,7 +14,7 @@ let bills = {
   groceries: 200,
   ring: 5,
   careCredit: 41,
-  studentLoans: 402, // due on the 11th
+  studentLoans: 421, // due on the 11th
 };
 
 let accounts = {
