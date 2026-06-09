@@ -71,8 +71,7 @@ function totalBills1() {
   totalCents = cents + 250;
   }
 
-document.querySelector(".hardemanPlaceholder").innerText =
-  `Hardeman = $${(totalCents / 100).toFixed(2)}`;
+document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
 }
 
 function totalBills2() {
