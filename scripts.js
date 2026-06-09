@@ -59,7 +59,9 @@ function totalBills1() {
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
   document.querySelector(".js-paragraph-first").innerText = `My part = $${firstHalf}`;
   document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
-  document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${((bills.hardeman * 100) * 28) / 100 + 3}`;
+  
+  const h = Math.round(bills.hardeman * 102.8) / 100;
+  document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${h.toFixed(2) + 2.5}`;
 }
 
 function totalBills2() {
