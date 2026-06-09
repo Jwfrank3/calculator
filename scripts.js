@@ -78,20 +78,6 @@ function totalBills1() {
   document.querySelector(".js-paragraph-parts").innerText = `Ned's and Kim's part = $${parts}`;
   document.querySelector(".js-paragraph-first").innerText = `My part = $${firstHalf}`;
   document.querySelector(".js-paragraph-first-budget").innerText = `Remaining Budget $${firstBudget}`;
-  const cents = Math.round(Number(bills.hardeman) * 100);
-
-  let totalCents = cents;
-
-  if (cents >= 5000) {
-  totalCents = Math.round(totalCents * 1.028);
-  }
-
-  totalCents += 250;
-
-  // ROUND UP to nearest dollar
-  totalCents = Math.ceil(totalCents / 100) * 100;
-
-  document.querySelector(".hardemanPlaceholder").innerText = `Hardeman = $${(totalCents / 100).toFixed(2)}`;
 }
 
 function totalBills2() {
