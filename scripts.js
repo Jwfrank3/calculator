@@ -68,7 +68,7 @@ function totalBills1() {
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
 
   // Add trashCost to total
-  const total = bills.mortgage + bills.chickasaw + bills.comcast + getHardemanTotal() + trashCost;
+  const total = bills.mortgage + (bills.chickasaw + 3) + bills.comcast + getHardemanTotal() + trashCost;
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.ring + 30;
