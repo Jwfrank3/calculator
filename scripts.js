@@ -52,7 +52,7 @@ function updateValue() {
   accounts.vickiCheck = Number(document.querySelector(".js-input-vickiCheck").value) || 990;
   accounts.vickiCheck2 = Number(document.querySelector(".js-input-vickiCheck2").value) || 990;
 
-  bills.chickasaw = Number(document.querySelector(".js-input-chickasaw").value) || 135;
+  bills.chickasaw = Number(document.querySelector(".js-input-chickasaw").value) + 3 || 135;
   bills.hardeman = Number(document.querySelector(".js-input-hardeman").value) || 43;
 
   bills.careCredit = Number(document.querySelector(".care-credit").value) || 30;
