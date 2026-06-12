@@ -10,7 +10,7 @@ let bills = {
   carInsurance: 120,
   lifeInsurance: 36,
   vAllowance: 150,
-  jAllowance: 150,
+  jAllowance: 200,
   groceries: 200,
   ring: 5,
   careCredit: 41,
