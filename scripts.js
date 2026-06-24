@@ -1,7 +1,7 @@
 let bills = {
   mortgage: 1024,
   chickasaw: 135,
-  comcast: 135,
+  comcast: 185,
   hardeman: 43,
   jCard: 123,
   vCard: 41,
