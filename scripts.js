@@ -1,7 +1,7 @@
 let bills = {
   mortgage: 1024,
   chickasaw: 135,
-  comcast: 185,
+  aeneas: 130,
   hardeman: 43,
   jCard: 123,
   vCard: 41,
@@ -74,7 +74,7 @@ function totalBills1() {
   const trashCost = trashCheckbox && trashCheckbox.checked ? 100 : 0;
 
   // Add trashCost to total
-  const total = bills.mortgage + getChickasawTotal() + bills.comcast + getHardemanTotal() + trashCost;
+  const total = bills.mortgage + getChickasawTotal() + bills.aeneas + getHardemanTotal() + trashCost;
   const parts = total / 4;
 
   const firstHalf = parts * 2 + bills.cricket + bills.ring + 30;
