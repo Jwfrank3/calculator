@@ -22,7 +22,7 @@ let accounts = {
   myCheck1: 462,
   myCheck2: 568,
   myCheck3: 462,
-  vickiCheck2: 990
+  vickiCheck2: 1030
 };
 
 function getChickasawTotal() {
