@@ -18,7 +18,7 @@ let bills = {
 };
 
 let accounts = {
-  vickiCheck: 990,
+  vickiCheck: 1030,
   myCheck1: 462,
   myCheck2: 568,
   myCheck3: 462,
